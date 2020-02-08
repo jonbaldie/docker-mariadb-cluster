@@ -1,5 +1,5 @@
 FROM mariadb:10.3
-MAINTAINER toughiq@gmail.com
+MAINTAINER jon@jonbaldie.com
 
 RUN apt-get update && apt-get upgrade -y \
     && rm -rf /var/lib/apt/lists/*
@@ -27,4 +27,3 @@ ENV GALERA_USER=galera \
     MYSQL_ALLOW_EMPTY_PASSWORD=1
     
 CMD ["mysqld"]
-
