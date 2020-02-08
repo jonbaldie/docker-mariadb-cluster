@@ -1,4 +1,5 @@
 FROM mariadb:10.3
+
 MAINTAINER jon@jonbaldie.com
 
 RUN apt-get update && apt-get upgrade -y \
